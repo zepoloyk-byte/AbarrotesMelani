@@ -262,32 +262,16 @@ tbody tr { height: auto !important; }
     .kpi-grid { grid-template-columns: 1fr !important; }
 }
 /* ==================================================================== */
-/* 🛡️ ESCUDO ANTI-CORTES PARA EL MENÚ SUPERIOR                          */
+/* 🕒 DISEÑO DE RELOJ DIGITAL POS                                       */
 /* ==================================================================== */
-
-body {
-    margin: 0 !important; 
-    padding: 0 !important;
-}
-
-/* Fijamos el contenedor del menú al techo de la pantalla */
-.tab {
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 9999 !important;
-    margin-top: 0 !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-}
-
-/* Centramos el texto de los botones para que no se suba */
-.t-btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    box-sizing: border-box !important;
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    line-height: normal !important;
+#live_clock {
+    background: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Bordecito elegante */
+    border-radius: 8px; /* Bordes suaves */
+    padding: 6px 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3) inset; /* Efecto de pantalla hundida */
+    font-family: 'Courier New', Courier, monospace; /* Letra tipo digital */
+    display: inline-block;
+    line-height: 1.2;
 }
